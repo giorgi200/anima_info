@@ -1,0 +1,143 @@
+@import 'bootstrap/scss/bootstrap-grid.scss';
+@import "./fonts.scss";
+@import "./varibles.scss";
+@import "./mixisns.scss";
+@import "./keyframes.scss";
+
+// ==== pages ====
+@import "./pages/header.scss";
+
+// @material icons
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body{
+    // background-image: url('../img/bg1.jpg');
+    overflow-x: hidden;
+    background-color: #000000;
+    position: relative;
+}
+body:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+    background-image: url('../img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}
+.anima-container{
+    width: 85%;
+    min-width: 1024px;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+#main{
+    position: relative;
+    padding-top: 80px;
+    min-height: 100vh;
+    .cube-figure{
+        width: 40%;
+        position: absolute;
+        left: -7.5px;
+        top: 0;
+        opacity: 0.77;
+        z-index: -2;
+        animation-name: zoomIn;
+        animation-duration: 0.4s;
+    }
+    .circle-figure{
+        position: absolute;
+        width: 29%;
+        right: 0;
+        top: 50%;
+        transform: translate(65%, -50%);
+        opacity: 0.5;
+        z-index: 1;
+        animation-name: zoomIn;
+        animation-duration: 0.4s;
+
+    }
+    .triangle-figure{
+        width: 30%;
+        position: absolute;
+        bottom: -115px;
+        left: 0;
+        animation-name: zoomInLeft;
+        animation-duration: 0.4s;
+
+    }
+    .hero-article{
+        margin-top: 70px;
+        padding-left: 25px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        
+        h1{
+            color:#fff;
+            font-size: 75px;
+            font-family: "PantonMtav3";
+            line-height: 0.8;
+            margin: 0;
+            animation-name: fadeInLeft;
+            animation-duration: 0.5s;
+            width: 100%;
+        }
+        p{
+            padding-left: 15px;
+            color: #4FDCFF;
+            font-size: 14px;
+            line-height: 1.56;
+            text-shadow: 0 0 5px rgba(79, 220, 255, .35);
+            width: 45%;
+            animation-name: fadeInLeft;
+            animation-duration: 0.7s;
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .chat-anima-btn{
+            font-size: 12px;
+            color: #fff;
+            font-family: "BPG LE Studio 04 Caps", sans-serif;
+            line-height: 1;
+            text-align: center;
+            width: 190px;
+            padding:10px 0 7.5px;
+            border: solid #E24EFF 1px;
+            border-radius: 5px;
+            background-color: rgba(255, 0, 255, .16);
+            box-shadow: 0 0 7px rgba(255, 0, 255, .65);
+            outline: none !important;
+            position: relative;
+            margin-top: 30px;
+            margin-right: 50%;
+            animation-name: fadeInLeft;
+            animation-duration: 0.8s;
+        }
+        .chat-anima-btn:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 4px;
+            top: 4px;
+            opacity: 0.77;
+            border-radius: 5px;
+            border: solid 1px #44F6FF;
+            box-shadow: 0 0 5px #1EE9FF;
+            animation-name: fadeInLeft;
+            animation-duration: 0.75s;
+            z-index: -1;
+        }
+  
+    }
+}

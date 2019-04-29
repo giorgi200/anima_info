@@ -1,0 +1,55 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    > a img{
+        animation-name: rubberBand;
+        animation-duration: 0.3s;
+        width: 100px;
+    }
+    .anima-nav {
+        max-width: 60%;
+        width: 775px;
+        display: flex;
+        align-items: center;
+        animation-name: bounce;
+        animation-duration: 0.4s;
+        transform-origin: center bottom;
+        .anima-menu-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0px;
+            margin: 0;
+            .anima-menu-link{
+                font-size: 14px;
+                font-family: "BPG LE Studio 04 Caps", sans-serif;
+                align-items: center;
+                display: flex;
+                a{
+                    color: #fff !important;
+                    line-height: 1 !important;
+                    text-decoration: none !important;
+                }
+            }
+            .anima-globe{
+                .material-icons{
+                    font-size: 18px;
+                    color: #F5F4F4;
+                }
+            }
+            .anima-login-link{
+                border: solid 1px #1FF2FD;
+                border-radius: 5px;
+                box-shadow: 0 0 14px rgba(30, 233, 255, 0.5);
+                padding: 10px;
+                padding-bottom: 6.5px;
+            }
+        }
+    }
+}
