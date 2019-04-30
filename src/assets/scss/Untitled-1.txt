@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="668.001" height="382" viewBox="0 0 668.001 382">
+  <g id="Group_52" data-name="Group 52" transform="translate(-1068 -745)">
+    <g id="Group_49" data-name="Group 49" transform="translate(-3211 -908)">
+      <path id="Subtraction_10" data-name="Subtraction 10" d="M596,372H26V348H13V335H26v13H39V335H26V322H13v13H4V47H51V24H75V0H649V21h17V325H619v24H596v23Z" transform="translate(4281 1663)" fill="rgba(0,255,74,0.64)" opacity="0.44"/>
+      <path id="Subtraction_14" data-name="Subtraction 14" d="M596,372H26V348H13V335H26v13H39V335H26V322H13v13H4V47H51V24H75V0H649V21h17V325H619v24H596v23Z" transform="translate(4945 2025) rotate(180)" fill="#e0f" opacity="0.44"/>
+    </g>
+  </g>
+</svg>

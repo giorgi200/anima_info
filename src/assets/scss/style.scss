@@ -14,8 +14,10 @@ body{
     overflow-x: hidden;
     background-color: #000000;
     position: relative;
+    background-image: url("../svg/pluses.svg");
+    background-position: center;
 }
-body:after{
+body:before{
     content: "";
     position: absolute;
     left: 0;
@@ -28,64 +30,69 @@ body:after{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;    
 }
 .anima-container{
-    width: 85%;
+    width: 81.5vw;
     min-width: 1024px;
-    margin-left:auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left:11.2vw;
+    margin-right: 7.3vw;
     
 }
-#main{
-    position: relative;
-    padding-top: 80px;
-    min-height: 100vh;
+
+#figures{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0;
     .cube-figure{
-        width: 40%;
+        width: 33vw;
         position: absolute;
-        left: -7.5px;
-        top: 0;
-        opacity: 0.77;
-        z-index: -2;
+        left: 10.2vw;
+        top: -16vh;
+        opacity: 0.5;
+        z-index: -1;
         animation-name: zoomIn;
         animation-duration: 0.4s;
     }
     .circle-figure{
         position: absolute;
-        width: 29%;
-        right: 0;
-        top: 50%;
-        transform: translate(65%, -50%);
+        width: 29.1vw;
+        right: -10.20vw;
+        top: 14.4vw;
         opacity: 0.5;
         z-index: 1;
-        animation-name: zoomIn;
+        animation-name: zoomInCircle;
         animation-duration: 0.4s;
 
     }
     .triangle-figure{
         width: 30%;
         position: absolute;
-        bottom: -115px;
+        top: 35vw;
         left: 0;
         animation-name: zoomInLeft;
         animation-duration: 0.4s;
 
     }
+}
+
+#main{
+    position: relative;
+    padding-top: 4.5vw;
+    min-height: 100vh;
     .hero-article{
         margin-top: 70px;
-        padding-left: 25px;
+        padding-left: 1.4vw;
         position: relative;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
-        
         h1{
             color:#fff;
-            font-size: 75px;
+            font-size: 6vw;
             font-family: "PantonMtav3";
+            font-weight: bold;
             line-height: 0.8;
             margin: 0;
             animation-name: fadeInLeft;
@@ -93,9 +100,9 @@ body:after{
             width: 100%;
         }
         p{
-            padding-left: 15px;
-            color: #4FDCFF;
-            font-size: 14px;
+            padding-left: 2vw;
+            color: rgba(79, 220, 255, .95);
+            font-size: 0.8vw;
             line-height: 1.56;
             text-shadow: 0 0 5px rgba(79, 220, 255, .35);
             width: 45%;
@@ -118,7 +125,7 @@ body:after{
             box-shadow: 0 0 7px rgba(255, 0, 255, .65);
             outline: none !important;
             position: relative;
-            margin-top: 30px;
+            margin-top: 1.77vw;
             margin-right: 50%;
             animation-name: fadeInLeft;
             animation-duration: 0.8s;
@@ -135,9 +142,178 @@ body:after{
             border: solid 1px #44F6FF;
             box-shadow: 0 0 5px #1EE9FF;
             animation-name: fadeInLeft;
-            animation-duration: 0.75s;
             z-index: -1;
         }
   
+    }
+
+    .anima-video-frame.started{
+        height: 34.7vw;
+        .anima-tutorial-title{
+            left: 6vw;
+            right: auto;
+        }
+    }
+    .anima-video-frame{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 14vw;
+        padding-right: 2.4vw;
+       
+        .show-tutorial{
+            width: 30vw;
+            height: 18vw;
+            position: absolute;
+            background-image: linear-gradient(to right bottom, #5e146b, #124F30);
+            padding: 4px;
+            top:0;
+            right:2.4vw;
+            opacity: 0;
+            animation-delay: 0.4s;
+            transition: all 0.5s ease;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .show-tutorial.show{
+            width: 61.8vw;
+            height: 34.7vw;
+            right: 50%;
+            top: 0;
+            transform: translateX(50%);
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .anima-tutorial-title{
+            position: absolute;
+            bottom: -4px;
+            right: 20.6vw;
+            margin-bottom: 0;
+            font-size: 4.11vw;
+            font-family: "PantonMtav3";
+            line-height: 1;
+            z-index: 2;
+            color: #E6E6E6;
+        }
+        svg.hide-tutorial{
+            opacity: 0;
+        }
+        > svg{
+            transition: opacity 0.4s ease-in-out;
+            animation-fill-mode: both;
+            width: 30vw;
+            height: 18vw;
+            z-index: 1;
+            #Group_49{
+                cursor: pointer;
+            }
+        }
+    }
+    .anima-pricing{
+        padding-top: 10.57vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > :nth-child(1){
+            border-color: rgba(0, 185, 255, .5);
+            background-color: rgba(31, 242, 253, .2);
+            box-shadow: 0 0 6px #1FF2FD;
+        }
+        > :nth-child(3){
+            border-color: rgba(0,255,33, 0.45);
+            background-color: rgba(0,255,33, .2);
+            box-shadow: 0 0 6px rgba(0,255,33, .65);
+        }
+        .anima-pricing-banner{
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            position: relative;
+            padding: 23.87px 35.6px 23.87px 22px;
+            width: 27.8%;
+            color: #fff; 
+            .anima-pricing-title{
+                text-align: right;
+                font-size: 1.56vw;
+                font-family: "PantonMtav3";
+                margin-bottom: 3.8vw;
+            }
+            .anima-pricing-about{
+                margin:0.82vw 0;
+                width: 60%;
+                font-size: 12px;
+                font-family: "BPG LE Studio 02 Caps", sans-serif;
+
+            }
+            .anima-pricing-price{
+                margin-top: 4.54vw;
+                font-family: "BPG LE Studio 02 Caps", sans-serif;
+                font-size: 11px;
+                text-align: center;
+                margin-bottom: .93vw;
+            }
+            .anima-pricing-submit{
+                background-color: transparent;
+                font-size: 13px;
+                font-family: "BPG LE Studio 04 Caps", sans-serif;
+                border-radius: 5px;
+                border:solid 1px #fff;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 1.56vw;
+                line-height:  1.56vw;
+                padding: 0 1.25vw;
+                color: #fff;
+            }
+        }
+        .anima-pricing-banner.pro{
+            border-color: rgba(255,0,255, .45);
+            background-color: rgba(255,0,255, .20);
+            box-shadow: 0 0 6px rgba(255,0,255, .65);
+            .anima-pricing-title{
+
+            }
+            .anima-pricing-about{
+
+            }
+            .anima-pricing-price{
+
+            }
+            .anima-pricing-submit{
+
+            }
+        }
+    }
+    .anima-partners{
+        padding-top: 10.57vw;
+        width: 48.1vw;
+        margin: 0 auto;
+        .anima-partners-title{
+            color: #fff;
+            text-align: center;
+            font-size:3.33vw;
+            font-family: "PantonMtav3";
+        }
+        .anima-partners-list{
+            margin-top: 4.72vw;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            :nth-child(1){
+                width: 8.4vw;
+            }
+            :nth-child(2){
+                width: 9.81vw;
+            }
+            :nth-child(3){
+                width: 9.5vw;
+            }
+        }
     }
 }

@@ -2,9 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
     z-index: 100;
     > a img{
         animation-name: rubberBand;
