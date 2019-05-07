@@ -4,6 +4,8 @@
     margin-top: 20px;
     position: absolute;
     z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
     > a img{
         animation-name: rubberBand;
         animation-duration: 0.3s;
@@ -29,10 +31,14 @@
                 font-family: "BPG LE Studio 04 Caps", sans-serif;
                 align-items: center;
                 display: flex;
-                a{
+                span::selection{
+                    background-color: transparent;
+                }
+                a,span{
                     color: #fff !important;
                     line-height: 1 !important;
                     text-decoration: none !important;
+                    cursor: pointer;
                 }
             }
             .anima-globe{

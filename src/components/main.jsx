@@ -131,7 +131,7 @@ class Main extends Component {
                 <button className="anima-pricing-submit">რეგისტრაცია</button>
             </div>
         </div>
-        <div className="anima-partners">
+        <div className="anima-partners" id="partners">
             <h2 className="anima-partners-title">პარტნიორები</h2>
             <div className="anima-partners-list">
                 <img src={require("../assets/img/partnior1.png")} alt="ministry of culture anima" />

@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 
 class Header extends Component {
+    state = {
+
+    }
+    
     render() {
         return (
             <header id="header" className="anima-container" >
@@ -18,7 +22,7 @@ class Header extends Component {
                             <Link to="/other" >ბოტების გალერეა</Link>
                         </li>
                         <li className="anima-menu-link">
-                            <Link to="/other" >პარტნიორები</Link>
+                            <Link to="/#partners" >პარტნიორები</Link>
                         </li>
                         <li className="anima-menu-link">
                             <Link to="/other" >კონტაქტი</Link>
