@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class Main extends Component {
     state = {
@@ -18,7 +19,7 @@ class Main extends Component {
   render() {
     return (
       <div className="anima-container" id="main"  onClick={this.state.tutorialHide} >
-       
+        <MessengerCustomerChat pageId="384360878990730" appId="1436432569824879"   htmlRef={window.location.pathname} />
         <article className="hero-article ">
           <h1>
             ანიმა <br /> ჩეტბოტიქსი
