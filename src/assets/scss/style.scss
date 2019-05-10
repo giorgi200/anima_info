@@ -80,7 +80,10 @@ body:before{
         left: 0;
         animation-name: zoomInLeft;
         animation-duration: 0.4s;
-
+    }
+    .rounded-figure{
+        position: absolute;
+        width: 23.2vw;
     }
 }
 

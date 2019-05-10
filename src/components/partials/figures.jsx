@@ -19,6 +19,11 @@ class figures extends Component {
             className="triangle-figure"
             alt="anima chatbots"
             />
+            <img
+            src={require("../../assets/img/figure4.png")}
+            className="rounded-figure"
+            alt="anima chatbots"
+            />
         </div>
     );
   }
