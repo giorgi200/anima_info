@@ -1,4 +1,5 @@
 @import 'bootstrap/scss/bootstrap-grid.scss';
+@import 'bootstrap/scss/bootstrap.scss';
 @import "./fonts.scss";
 @import "./varibles.scss";
 @import "./mixisns.scss";
@@ -6,6 +7,8 @@
 
 // ==== pages ====
 @import "./pages/header.scss";
+@import "./pages/main.scss";
+@import "./pages/login.scss";
 
 // @material icons
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -17,6 +20,7 @@ body{
     background-image: url("../svg/pluses.svg");
     background-position: center;
 }
+
 body:before{
     content: "";
     position: absolute;
@@ -31,6 +35,7 @@ body:before{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .anima-container{
     width: 81.5vw;
     min-width: 1024px;
@@ -52,6 +57,7 @@ body:before{
     background-size: contain;
     background-position:center bottom;
     background-repeat: no-repeat;
+    z-index: -1;
     .cube-figure{
         width: 33vw;
         position: absolute;
@@ -83,261 +89,78 @@ body:before{
     }
     .rounded-figure{
         position: absolute;
+        bottom: 45vh;
+        left: 50%;
         width: 23.2vw;
     }
 }
 
-#main{
-    position: relative;
-    padding-top: 4.5vw;
-    .hero-article{
-        margin-top: 70px;
-        padding-left: 1.4vw;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        h1{
-            color:#fff;
-            font-size: 6vw;
-            font-family: "PantonMtav3";
-            font-weight: bold;
-            line-height: 0.8;
-            margin: 0;
-            animation-name: fadeInLeft;
-            animation-duration: 0.5s;
-            width: 100%;
-        }
-        p{
-            padding-left: 2vw;
-            color: rgba(79, 220, 255, .95);
-            font-size: 0.8vw;
-            line-height: 1.56;
-            text-shadow: 0 0 5px rgba(79, 220, 255, .35);
-            width: 45%;
-            animation-name: fadeInLeft;
-            animation-duration: 0.7s;
-            margin: 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-        .chat-anima-btn{
-            font-size: 12px;
-            color: #fff;
-            font-family: "BPG LE Studio 04 Caps", sans-serif;
-            line-height: 1;
-            text-align: center;
-            width: 190px;
-            padding:10px 0 7.5px;
-            border: solid #E24EFF 1px;
+#bot-gallery{
+    min-height: 100vh;
+    padding-top: 16vh;
+    .anima-bots-heading{
+        margin-bottom: 9.5vh;
+        color: #E6E6E6;
+        text-align: center;
+        font-size: 90px;
+        line-height: 69px;
+        font-family: 'PantonMtav3';
+    }
+    .anima-bots-grid{
+        display: grid;
+        grid-row-gap: 50px;
+        grid-column-gap: 3.65vw;
+        grid-template-columns: calc(25% - 1.825vw) calc(25% - 1.825vw) calc(25% - 1.825vw) calc(25% - 1.825vw);
+        .anima-bot{
+            border: solid 1px rgba(31, 242, 253, 0.9);
             border-radius: 5px;
-            background-color: rgba(255, 0, 255, .16);
-            box-shadow: 0 0 7px rgba(255, 0, 255, .65);
-            outline: none !important;
-            position: relative;
-            margin-top: 1.77vw;
-            margin-right: 50%;
-            animation-name: fadeInLeft;
-            animation-duration: 0.8s;
-        }
-        .chat-anima-btn:after{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 4px;
-            top: 4px;
-            opacity: 0.77;
-            border-radius: 5px;
-            border: solid 1px #44F6FF;
-            box-shadow: 0 0 5px #1EE9FF;
-            animation-name: fadeInLeft;
-            z-index: -1;
-        }
-  
-    }
-
-    .anima-video-frame.started{
-        height: 34.7vw;
-        .anima-tutorial-title{
-            left: 6vw;
-            right: auto;
-        }
-    }
-    .anima-video-frame{
-        width: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 14vw;
-        padding-right: 2.4vw;
-       
-        .show-tutorial{
-            width: 30vw;
-            height: 18vw;
-            position: absolute;
-            background-image: linear-gradient(to right bottom, #5e146b, #124F30);
-            padding: 4px;
-            top:0;
-            right:2.4vw;
-            opacity: 0;
-            animation-delay: 0.4s;
-            transition: all 0.5s ease;
-            iframe{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .show-tutorial.show{
-            width: 61.8vw;
-            height: 34.7vw;
-            right: 50%;
-            top: 0;
-            transform: translateX(50%);
-            opacity: 1;
-            z-index: 1;
-        }
-        
-        .anima-tutorial-title{
-            position: absolute;
-            bottom: -4px;
-            right: 20.6vw;
-            margin-bottom: 0;
-            font-size: 4.11vw;
-            font-family: "PantonMtav3";
-            line-height: 1;
-            z-index: 2;
-            color: #E6E6E6;
-        }
-        svg.hide-tutorial{
-            opacity: 0;
-        }
-        > svg{
-            transition: opacity 0.4s ease-in-out;
-            animation-fill-mode: both;
-            width: 30vw;
-            height: 18vw;
-            z-index: 1;
-            #Group_49{
-                cursor: pointer;
-            }
-        }
-    }
-
-    .anima-pricing{
-        // padding-top: 10.57vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 100vh;
-        > :nth-child(1){
-            border-color: rgba(0, 185, 255, .5);
-            background-color: rgba(31, 242, 253, .2);
-            box-shadow: 0 0 6px #1FF2FD;
-        }
-        > :nth-child(3){
-            border-color: rgba(0,255,33, 0.45);
-            background-color: rgba(0,255,33, .2);
-            box-shadow: 0 0 6px rgba(0,255,33, .65);
-        }
-        .anima-pricing-banner{
-            border-radius: 10px;
-            border-width: 2px;
-            border-style: solid;
-            position: relative;
-            padding: 20px 35.6px 23.87px 22px;
-            width: 27.8%;
-            color: #fff; 
-            .anima-pricing-title{
-                text-align: right;
-                font-size: 1.56vw;
-                font-family: "PantonMtav3";
-                margin-bottom: 3.8vw;
-            }
-            .anima-pricing-about{
-                margin-bottom:1.55vw;
-                width: 60%;
-                font-size: 0.6vw;
-                font-family: "BPG LE Studio 02 Caps", sans-serif;
-
-            }
-            .anima-pricing-price{
-                margin-top: 5.1vw;
-                font-family: "BPG LE Studio 02 Caps", sans-serif;
-                font-size: .57vw;
-                text-align: center;
-                margin-bottom: .93vw;
-            }
-            .anima-pricing-submit{
-                background-color: transparent;
-                font-size: 13px;
-                font-family: "BPG LE Studio 04 Caps", sans-serif;
-                border-radius: 5px;
-                border:solid 1px #fff;
+            // height: 32.4vh;
+            height: 350px;
+            background: rgba(0, 0, 0, .8);
+            article{
                 position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-                height: 1.56vw;
-                line-height:  1.56vw;
-                padding: 0 1.25vw;
-                color: #fff;
-                outline: none;
-                font-size: 11px;
-            }
-        }
-        .anima-pricing-banner.pro{
-            border-color: rgba(255,0,255, .45);
-            background-color: rgba(255,0,255, .20);
-            box-shadow: 0 0 6px rgba(255,0,255, .65);
-            padding: 22px 38px 28px 26px;
-            .anima-pricing-title{
-                font-size: 1.82vw;
-                margin-bottom: 4.3
-            }
-            .anima-pricing-about{
-                font-size: 0.7vw;
-                margin-bottom: 1.76vw;
+                height: 100%;
+                // padding-top: 15%;
+                // padding-left: 23%;
+                .bots-title{
+                    position: absolute;
+                    font-family: "PantonMtav3";
+                    font-size: 32px;
+                    line-height: 28px;
+                    color: #fff;
+                    text-decoration: none;
+                    margin-left: 1.3vw;
+                    margin-top: 13vh;
+                    max-width: 50%;
+                    z-index: 1;
+                }
+                .bot-image-space{
+                    width: 77%;
+                    height: 85%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    overflow: hidden;
+                    img{
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        width: auto;
+                        height: 100%;
+                        opacity: .5;
+                    }
+                }
+                .bot-image-space.default-avatar{
+                    width: 50%;
+                    img{
+                        transform: translate(0, 0);
+                        left:0; 
+
+                    }
+                }
                 
             }
-            .anima-pricing-price{
-                margin-top: 4.3vw;
-                font-size: .677vw;
-            }
-            .anima-pricing-submit{
-
-            }
         }
     }
-
-    .anima-partners{
-        // padding-top: 10.57vw;
-        width: 48.1vw;
-        margin: 0 auto;
-        min-height: 50vh;
-        // display: flex;
-        // align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        .anima-partners-title{
-            color: #fff;
-            text-align: center;
-            font-size:3.33vw;
-            font-family: "PantonMtav3";
-        }
-        .anima-partners-list{
-            margin-top: 4.72vw;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            :nth-child(1){
-                width: 8.4vw;
-            }
-            :nth-child(2){
-                width: 9.81vw;
-            }
-            :nth-child(3){
-                width: 9.5vw;
-            }
-        }
-    }
+    
 }

@@ -9,15 +9,15 @@ class Header extends Component {
     
     render() {
         return (
-            <header id="header" className="anima-container" >
+            <header id="header" >
                 <Link to="/">
-                <img src={ require("../../assets/svg/logo.svg") } alt="anima chatbotix" />
+                    <img src={ require("../../assets/svg/logo.svg") } alt="anima chatbotix" />
                 </Link>
                 <nav className="anima-nav">
                     <ul className="anima-menu-list">
-                        <li className="anima-menu-link">
+                        {/* <li className="anima-menu-link">
                             <Link to="/other" >ჩვენ შესახებ</Link>
-                        </li>
+                        </li> */}
                         <li className="anima-menu-link">
                             <Link to="/other" >ბოტების გალერეა</Link>
                         </li>
@@ -28,7 +28,7 @@ class Header extends Component {
                             <Link to="/other" >კონტაქტი</Link>
                         </li>
                         <li className="anima-menu-link anima-login-link">
-                            <Link to="/other" >შესვლა</Link>
+                            <Link to="/login" >შესვლა</Link>
                         </li>
                         <li className="anima-menu-link anima-globe">
                             <Link to="/other" >

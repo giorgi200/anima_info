@@ -140,6 +140,9 @@ class Main extends Component {
                 <img src={require("../assets/svg/partnior3.svg")} alt="ltfr anima" />
             </div>
         </div>
+        <div className="footer-chat-anima">
+          <button className="chat-anima-btn-footer">დაელაპარაკე ანიმას</button>
+        </div>
       </div>
     );
   }
