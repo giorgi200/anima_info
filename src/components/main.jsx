@@ -18,9 +18,9 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="anima-container" id="main"  onClick={this.state.tutorialHide} >
-        <MessengerCustomerChat pageId="384360878990730" appId="1436432569824879"   htmlRef={window.location.pathname} />
-        <article className="hero-article ">
+      <div id="main"  onClick={this.state.tutorialHide} >
+        <MessengerCustomerChat pageId="328068021199335" appId="1436432569824879"   htmlRef={window.location.pathname} />
+        <article className="hero-article anima-container">
           <h1>
             ანიმა <br /> ჩეტბოტიქსი
           </h1>
@@ -29,10 +29,8 @@ class Main extends Component {
         </article>
         <div className={!this.state.tutorial ? "anima-video-frame" : "anima-video-frame started"} >
             <div className={!this.state.tutorial ? "show-tutorial" : "show-tutorial show"}>
-                <iframe src="https://www.youtube.com/embed/rpWrtXyEAN0" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-            </div>
-            <h2 className="anima-tutorial-title">ტუტორიალი</h2>
-            
+                <iframe src="https://www.youtube.com/embed/rpWrtXyEAN0" title="tutorial" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            </div>            
           <svg
             onClick={this.state.tutorialShow}
             className={!this.state.tutorial ? "" : "hide-tutorial"}
@@ -109,39 +107,50 @@ class Main extends Component {
             </g>
           </svg>
         </div>
-        <div className="anima-pricing">
-            <div className="anima-pricing-banner">
-                <h3 className="anima-pricing-title">პრო <br/> ბოტი</h3>
-                <p className="anima-pricing-about">რედაქტირების საბაზო ფუნქციონალი</p>
-                <p className="anima-pricing-about">10 000 კითხვა - პასუხი ერთი თვის განმავლობაში</p>
-                <p className="anima-pricing-price">ფასი: 30$/თვე</p>
-                <button className="anima-pricing-submit">რეგისტრაცია</button>
+        <div className="pricing-section ">
+            <div className="anima-pricing anima-container">
+              <div className="anima-pricing-banner">
+                  <h3 className="anima-pricing-title">პრო <br/> ბოტი</h3>
+                  <p className="anima-pricing-about">რედაქტირების საბაზო ფუნქციონალი</p>
+                  <p className="anima-pricing-about">10 000 კითხვა - პასუხი ერთი თვის განმავლობაში</p>
+                  <p className="anima-pricing-price">ფასი: 30$/თვე</p>
+                  <button className="anima-pricing-submit">რეგისტრაცია</button>
+              </div>
+              <div className="anima-pricing-banner pro">
+                  <h3 className="anima-pricing-title">პრემიუმ <br/> ბოტი</h3>
+                  <p className="anima-pricing-about">რედაქტირების საბაზო ფუნქციონალი</p>
+                  <p className="anima-pricing-about">10 000 კითხვა - პასუხი ერთი თვის განმავლობაში</p>
+                  <p className="anima-pricing-price">ფასი: 30$/თვე</p>
+                  <button className="anima-pricing-submit">COMING SOON</button>
+              </div>
+              <div className="anima-pricing-banner">
+                  <h3 className="anima-pricing-title">პრემიუმ <br/> ბოტი</h3>
+                  <p className="anima-pricing-about">რედაქტირების საბაზო ფუნქციონალი</p>
+                  <p className="anima-pricing-about">10 000 კითხვა - პასუხი ერთი თვის განმავლობაში</p>
+                  <p className="anima-pricing-price">ფასი: 30$/თვე</p>
+                  <button className="anima-pricing-submit">რეგისტრაცია</button>
+              </div>
             </div>
-            <div className="anima-pricing-banner pro">
-                <h3 className="anima-pricing-title">პრემიუმ <br/> ბოტი</h3>
-                <p className="anima-pricing-about">რედაქტირების საბაზო ფუნქციონალი</p>
-                <p className="anima-pricing-about">10 000 კითხვა - პასუხი ერთი თვის განმავლობაში</p>
-                <p className="anima-pricing-price">ფასი: 30$/თვე</p>
-                <button className="anima-pricing-submit">COMING SOON</button>
+            
+            <div className="footer-chat-anima">
+              <button className="chat-anima-btn-footer">დაელაპარაკე ანიმას</button>
             </div>
-            <div className="anima-pricing-banner">
-                <h3 className="anima-pricing-title">პრემიუმ <br/> ბოტი</h3>
-                <p className="anima-pricing-about">რედაქტირების საბაზო ფუნქციონალი</p>
-                <p className="anima-pricing-about">10 000 კითხვა - პასუხი ერთი თვის განმავლობაში</p>
-                <p className="anima-pricing-price">ფასი: 30$/თვე</p>
-                <button className="anima-pricing-submit">რეგისტრაცია</button>
-            </div>
+            <img
+              src={require("../assets/img/figure4.png")}
+              className="rounded-figure-pricing"
+              alt="anima chatbots"
+            />
         </div>
-        <div className="anima-partners" id="partners">
-            <h2 className="anima-partners-title">პარტნიორები</h2>
+        
+        <div className="anima-partners anima-container" id="partners">
+          <div className="for-center">
+            <img src={require("../assets/img/partners-title.png")}  className="anima-partners-title" alt="anima chatbotics"/>
             <div className="anima-partners-list">
                 <img src={require("../assets/img/partnior1.png")} alt="ministry of culture anima" />
                 <img src={require("../assets/svg/partnior2.svg")} alt="heliae university anima" />
                 <img src={require("../assets/svg/partnior3.svg")} alt="ltfr anima" />
             </div>
-        </div>
-        <div className="footer-chat-anima">
-          <button className="chat-anima-btn-footer">დაელაპარაკე ანიმას</button>
+          </div>
         </div>
       </div>
     );
