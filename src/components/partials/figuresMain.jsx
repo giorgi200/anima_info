@@ -21,7 +21,7 @@ class figures extends Component {
           }
             <img
             src={require("../../assets/img/figure2.png")}
-            className="circle-figure"
+            className="circle-figure-main"
             alt="anima chatbots"
             />
             <img

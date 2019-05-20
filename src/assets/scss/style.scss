@@ -12,6 +12,7 @@
 
 // @material icons
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 body{
     // background-image: url('../img/bg1.jpg');
     overflow-x: hidden;
@@ -80,6 +81,16 @@ body:before{
         animation-name: zoomInCircle;
         animation-duration: 0.4s;
 
+    }
+    .circle-figure-main{
+        position: absolute;
+        width: 29.1vw;
+        right: -10.20vw;
+        top: 14.4vw;
+        opacity: 0.5;
+        z-index: 1;
+        animation-name: zoomInCircle;
+        animation-duration: 0.4s;
     }
     .triangle-figure{
         width: 30%;
