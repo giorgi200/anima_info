@@ -1,13 +1,13 @@
 import React, { Component } from "react";
+import Rellax from 'rellax';
 
 class figures extends Component {
-  // state = {
-  //   isAuth: this.props.match.path === "/login" || this.props.match.path === "/login"  
-  // }
   componentDidMount(){
-    console.log(this.props)
+    this.rellax = new Rellax('.rellax');
   }
-  
+  componentWillUnmount(){
+    this.rellax.destroy();
+  }
   render() {
     return (
         <div id="figures" className="no-bg">
@@ -21,12 +21,15 @@ class figures extends Component {
           }
             <img
             src={require("../../assets/img/figure2.png")}
-            className="circle-figure-main"
+            className="circle-figure-main rellax"
+            data-rellax-speed="1"
+            // data-rellax-percentage="0.5"
             alt="anima chatbots"
             />
             <img
             src={require("../../assets/svg/figure3.svg")}
-            className="triangle-figure"
+            className="triangle-figure rellax"
+            data-rellax-speed="-2"
             alt="anima chatbots"
             />
             

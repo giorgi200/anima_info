@@ -27,9 +27,13 @@ class Main extends Component {
           <p>{this.state.about}</p>
           <button className="chat-anima-btn">დაელაპარაკე ანიმას</button>
         </article>
-        <div className={!this.state.tutorial ? "anima-video-frame" : "anima-video-frame started"} >
+        <div className={!this.state.tutorial ? "anima-video-frame anima-container" : "anima-video-frame started anima-container"} >
+           
             <div className={!this.state.tutorial ? "show-tutorial" : "show-tutorial show"}>
-                <iframe src="https://www.youtube.com/embed/rpWrtXyEAN0" title="tutorial" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <button className="close-video" onClick={this.state.tutorialHide}>
+                <i className="material-icons">close</i>            
+              </button>
+              <iframe src="https://www.youtube.com/embed/rpWrtXyEAN0" title="tutorial" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>            
           <svg
             onClick={this.state.tutorialShow}
@@ -141,7 +145,6 @@ class Main extends Component {
               alt="anima chatbots"
             />
         </div>
-        
         <div className="anima-partners anima-container" id="partners">
           <div className="for-center">
             <img src={require("../assets/img/partners-title.png")}  className="anima-partners-title" alt="anima chatbotics"/>

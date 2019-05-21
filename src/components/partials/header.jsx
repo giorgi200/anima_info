@@ -19,7 +19,7 @@ class Header extends Component {
                             <Link to="/other" >ჩვენ შესახებ</Link>
                         </li> */}
                         <li className="anima-menu-link">
-                            <Link to="/other" >ბოტების გალერეა</Link>
+                            <Link to="/bots" >ბოტების გალერეა</Link>
                         </li>
                         <li className="anima-menu-link">
                             <Link to="/#partners" >პარტნიორები</Link>
