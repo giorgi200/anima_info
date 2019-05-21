@@ -1,0 +1,85 @@
+#figures{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url('../img/valley.png');
+    // background-image: url('../img/valley2.png');
+    align-items: center;
+    background-size: contain;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+    .cube-figure{
+        width: 33vw;
+        position: absolute;
+        left: 10.2vw;
+        top: -16vh;
+        opacity: 0.5;
+        z-index: -1;
+        animation-name: zoomIn;
+        animation-duration: 0.4s;
+    }
+    .circle-figure{
+        position: absolute;
+        width: 29.1vw;
+        right: -19vw;
+        top: -31.3vh;
+        opacity: 0.87;
+        z-index: 1;
+        animation-name: zoomInCircle;
+        animation-duration: 0.4s;
+
+    }
+    .circle-figure-bots{
+        position: absolute;
+        width: 29.1vw;
+        right: -9.4vw;
+        top: -31.3vh;
+        opacity: 0.87;
+        z-index: 1;
+        animation-name: zoomInCircle;
+        animation-duration: 0.3s;
+    }
+    .circle-figure-main{
+        position: absolute;
+        width: 29.1vw;
+        right: -10.20vw;
+        top: 14.4vw;
+        opacity: 0.5;
+        z-index: 1;
+        animation-name: zoomInCircle;
+        animation-duration: 0.4s;
+    }
+    .triangle-figure{
+        width: 30%;
+        position: absolute;
+        top: 35vw;
+        left: 0;
+        animation-name: zoomInLeft;
+        animation-duration: 0.4s;
+    }
+    .triangle-figure-other{
+        width: 33%;
+        position: absolute;
+        top: -18.5vh;
+        left: -2.4vw;
+        opacity: .5;
+        animation-name: zoomInLeft;
+        animation-duration: 0.4s;
+    }
+    .rounded-figure{
+        position: absolute;
+        bottom: 45vh;
+        left: 50%;
+        width: 23.2vw;
+    }
+    .rounded-figure-bots{
+        position: absolute;
+        bottom: 4vh;
+        left: 50%;
+        width: 23.2vw;
+    }
+}

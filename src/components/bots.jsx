@@ -21,7 +21,7 @@ class BotsGallery extends Component {
             },
             {
                 id: 3,
-                name: 'ფდდასფსდაგაფგფგსდფ ჰ სფდსგფსფგსფდფდგსდფ',
+                name: 'უნა ბოტი',
                 img: ''
             }
         ],
@@ -34,42 +34,67 @@ class BotsGallery extends Component {
                 <div className="anima-bots-grid">
 
 
-                        <Link to="/0" className="anima-bot" >
+                        <div  className="anima-bot" >
                             <article>
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[0].name}}></h2>
                                 <div className={this.state.bots[0].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[0].img !== '' ? this.state.bots[0].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[0].name}/>
                                 </div>      
                             </article>
-                        </Link> 
+                        </div> 
 
-                        <Link to="/1" className="anima-bot" >
+                        <div className="anima-bot" >
                             <article>
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[1].name}}></h2>
                                 <div className={this.state.bots[1].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[1].img !== '' ? this.state.bots[1].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[1].name}/>
                                 </div>
                             </article>
-                        </Link> 
+                        </div> 
 
-                        <Link to="/2" className="anima-bot" >
+                        <div className="anima-bot" >
                             <article>
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[2].name}}></h2>
                                 <div className={this.state.bots[2].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[2].img !== '' ? this.state.bots[2].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[2].name}/>
                                 </div>
                             </article>
-                        </Link>
-                        <Link to="/3" className="anima-bot" >
+                        </div>
+                        <div className="anima-bot" >
                             <article>
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[3].name}}></h2>
                                 <div className={this.state.bots[3].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[3].img !== '' ? this.state.bots[3].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[3].name}/>
                                 </div>
                             </article>
-                        </Link>
+                        </div>
+                        <div  className="anima-bot" >
+                            <article>
+                                <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[0].name}}></h2>
+                                <div className={this.state.bots[0].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
+                                    <img src={this.state.bots[0].img !== '' ? this.state.bots[0].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[0].name}/>
+                                </div>      
+                            </article>
+                        </div> 
 
-                     
+                        <div className="anima-bot" >
+                            <article>
+                                <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[1].name}}></h2>
+                                <div className={this.state.bots[1].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
+                                    <img src={this.state.bots[1].img !== '' ? this.state.bots[1].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[1].name}/>
+                                </div>
+                            </article>
+                        </div> 
+
+                        <div className="anima-bot" >
+                            <article>
+                                <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[2].name}}></h2>
+                                <div className={this.state.bots[2].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
+                                    <img src={this.state.bots[2].img !== '' ? this.state.bots[2].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[2].name}/>
+                                </div>
+                            </article>
+                        </div>
+                        
                 </div>
             </section>
         );

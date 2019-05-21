@@ -34,7 +34,8 @@ class Main extends Component {
                 <i className="material-icons">close</i>            
               </button>
               <iframe src="https://www.youtube.com/embed/rpWrtXyEAN0" title="tutorial" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-            </div>            
+            </div>
+            <h2 className="anima-tutorial-title">ტუტორიალი</h2>            
           <svg
             onClick={this.state.tutorialShow}
             className={!this.state.tutorial ? "" : "hide-tutorial"}
