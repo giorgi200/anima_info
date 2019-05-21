@@ -21,7 +21,7 @@
             border: solid 1px rgba(31, 242, 253, 0.9);
             border-radius: 5px;
             // height: 32.4vh;
-            height: 350px;
+            height: 39.5vh;
             background: rgba(0, 0, 0, .8);
             article{
                 position: relative;
@@ -64,7 +64,20 @@
 
                     }
                 }
-                
+                .open-bot-link{
+                    position: absolute;
+                    bottom: 2.3vh;
+                    left: 1.3vw;
+                    padding: 6px 15px 4px;
+                    border-radius: 6px;
+                    border: solid 1px #00D4FF;
+                    color: #1FF2FD;
+                    font-size: 15px;
+                    font-family: "ALK Sanet", sans-serif;
+                    text-align: center;
+                    line-height: 1;
+                    text-decoration: none;
+                }
             }
         }
         .anima-bot:hover {

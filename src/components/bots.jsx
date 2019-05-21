@@ -39,7 +39,8 @@ class BotsGallery extends Component {
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[0].name}}></h2>
                                 <div className={this.state.bots[0].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[0].img !== '' ? this.state.bots[0].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[0].name}/>
-                                </div>      
+                                </div>
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div> 
 
@@ -49,6 +50,7 @@ class BotsGallery extends Component {
                                 <div className={this.state.bots[1].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[1].img !== '' ? this.state.bots[1].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[1].name}/>
                                 </div>
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div> 
 
@@ -58,6 +60,7 @@ class BotsGallery extends Component {
                                 <div className={this.state.bots[2].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[2].img !== '' ? this.state.bots[2].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[2].name}/>
                                 </div>
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div>
                         <div className="anima-bot" >
@@ -66,6 +69,7 @@ class BotsGallery extends Component {
                                 <div className={this.state.bots[3].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[3].img !== '' ? this.state.bots[3].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[3].name}/>
                                 </div>
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div>
                         <div  className="anima-bot" >
@@ -73,16 +77,18 @@ class BotsGallery extends Component {
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[0].name}}></h2>
                                 <div className={this.state.bots[0].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[0].img !== '' ? this.state.bots[0].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[0].name}/>
-                                </div>      
+                                </div>  
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div> 
 
                         <div className="anima-bot" >
                             <article>
                                 <h2 className="bots-title" dangerouslySetInnerHTML={{__html: this.state.bots[1].name}}></h2>
-                                <div className={this.state.bots[1].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
-                                    <img src={this.state.bots[1].img !== '' ? this.state.bots[1].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[1].name}/>
+                                <div className={this.state.bots[2].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
+                                    <img src={this.state.bots[2].img !== '' ? this.state.bots[2].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[2].name}/>
                                 </div>
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div> 
 
@@ -92,6 +98,7 @@ class BotsGallery extends Component {
                                 <div className={this.state.bots[2].img !== '' ? "bot-image-space " : "bot-image-space default-avatar"} >
                                     <img src={this.state.bots[2].img !== '' ? this.state.bots[2].img : require("../assets/svg/bot.svg")} alt={ this.state.bots[2].name}/>
                                 </div>
+                                <Link to="/0" className="open-bot-link">გადასვლა</Link>  
                             </article>
                         </div>
                         

@@ -23,6 +23,7 @@
             h1{
                 font-size: 90px
             }
+
         }
         .pricing-section {
             .anima-pricing {
@@ -31,7 +32,7 @@
                     .anima-pricing-about{
                         font-size: 11px;
                         margin-bottom:1.2vw;
-                        width: 60%;
+                        width: 70%;
                     }
                 }
                 .anima-pricing-banner.pro{
@@ -46,11 +47,38 @@
 }
 // 1500px
 @media only screen and (max-width: 1500px) {
-
+    #main{
+        .hero-article{
+            h1{
+                font-size: 80px
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    #bot-gallery .anima-bots-grid .anima-bot article {
+        .bots-title {
+            font-size: 28px;
+            line-height: 24px;
+        }
+        .open-bot-link {
+            font-size: 13px;
+        }
+    }
 }
 // 1400px
 @media only screen and (max-width: 1400px) {
-
+    #main{
+        .hero-article{
+            h1{
+                font-size: 70px
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
 }
 // 1300px
 @media only screen and (max-width: 1300px) {
