@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a9d535c.chunk.css",
+    "main.js": "/static/js/main.ce8b70d3.chunk.js",
+    "main.js.map": "/static/js/main.ce8b70d3.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.813ee41b.chunk.css": "/static/css/2.813ee41b.chunk.css",
+    "static/js/2.00a7c7ff.chunk.js": "/static/js/2.00a7c7ff.chunk.js",
+    "static/js/2.00a7c7ff.chunk.js.map": "/static/js/2.00a7c7ff.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9640ddee8c50cc53eecac61530a964f8.js": "/precache-manifest.9640ddee8c50cc53eecac61530a964f8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.813ee41b.chunk.css.map": "/static/css/2.813ee41b.chunk.css.map",
+    "static/css/main.1a9d535c.chunk.css.map": "/static/css/main.1a9d535c.chunk.css.map",
+    "static/media/style.scss": "/static/media/valley.e53789ca.png",
+    "static/media/figure1.svg": "/static/media/figure1.251ee93c.svg",
+    "static/media/figure2.png": "/static/media/figure2.5e45f370.png",
+    "static/media/figure3.svg": "/static/media/figure3.fb98c844.svg",
+    "static/media/figure4.png": "/static/media/figure4.7c975768.png",
+    "static/media/logo.svg": "/static/media/logo.13071f38.svg",
+    "static/media/partners-title.png": "/static/media/partners-title.b697685a.png",
+    "static/media/partnior1.png": "/static/media/partnior1.fc4866e4.png",
+    "static/media/partnior2.svg": "/static/media/partnior2.a6773316.svg",
+    "static/media/partnior3.svg": "/static/media/partnior3.ba1bd052.svg"
+  }
+}
