@@ -6,7 +6,7 @@ class login extends Component {
         notValid: false,
     }
     componentDidMount(){
-        document.title = "Anima Chatbotics"
+        document.title = "ავტორიზაცია - Anima Chatbotics"
     }
     render() {
         return (

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class Main extends Component {
-    state = {
+  state = {
         collapseAbout: false,
         about: `ლორემ იპსუმ თაყვანისმცემლისთვის შემოივლიდი დამტკიცდა, მას გადაუჩურჩულა 
                 მაიძულებენ ყურის. სანერვიულო ჩამებარებინა ქაღალდის ეკრანის, ხეებქვეშ, 
@@ -15,7 +15,9 @@ class Main extends Component {
             if(this.state.tutorial)  this.setState({ tutorial: false}); 
         }
     };
-
+  componentDidMount(){
+      document.title = "Anima Chatbotics"
+  }
   render() {
     return (
       <div id="main"  onClick={this.state.tutorialHide} >
