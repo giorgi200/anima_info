@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 class login extends Component {
- 
+    state = {
+        notValid: false,
+    }
+    componentDidMount(){
+        document.title = "Anima Chatbotics"
+    }
     render() {
         return (
             <div id="login">
@@ -26,6 +31,7 @@ class login extends Component {
                             </div>
                         </div>
                     </div>
+                    {   this.state.notValid ? <p  className="invalid-feedback custom-error">ფორმატი არ ემთხვევა</p> : ""}
                     <button className="auth-submit" type="button">შესვლა</button>
                     <Link to="/main" className="auth-forgot-password" >პაროლის აღდგენა</Link>
                     <Link to="/registration" className="auth-registration" >რეგისტრაცია</Link>

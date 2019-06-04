@@ -11,7 +11,8 @@
     "react-messenger-customer-chat": "^0.7.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
-    "rellax": "^1.9.1"
+    "rellax": "^1.9.1",
+    "validator": "^11.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

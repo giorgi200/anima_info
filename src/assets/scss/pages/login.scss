@@ -10,7 +10,9 @@
         margin-top: 80px;
         margin-bottom: 80px;
         border:solid rgba(255, 255, 255, 0.5) 2px;
-        background-color: rgba(0,0,0, .5);
+        background-image: url("../img/login-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
         border-radius: 10px;
         box-shadow: 0 0 6px rgba(0, 0, 0, .2);
         color: #fff;
@@ -25,10 +27,26 @@
             width: 19.3vw;
             margin-right: auto;
             margin-left: auto;
-            margin-bottom: 7.77vh; 
+            margin-bottom: 12.4vh; 
+            .input-group.error-input{
+                border-color: #FF0053;
+            }
+            .custom-error{
+                color: #FF0053;
+                display: block;
+                font-family: "BPG LE Studio 04 Caps", sans-serif;
+                font-size: 12px;
+                text-align: left;
+                transition: all .4s ease;
+                margin: 1px 0;
+                animation-name: fadeInLeft;
+                animation-duration: 0.4s;
+            }
+
             .input-group{
                 border-bottom:solid 1px #fff;
-                margin-bottom: 4.63vh;
+                margin-top: 4.63vh;
+                
                 input{
                     background-color: transparent;
                     border: none;
@@ -37,13 +55,13 @@
                     height: auto;
                     padding: 0;
                     padding-right: 12px;
-                    font-size: .73vw;
+                    font-size: 16px;
                     color: #fff;
                     font-family: "BPG LE Studio 04 Caps", sans-serif;
                 
                 }
                 input::placeholder{
-                    font-size: .73vw;
+                    font-size: 16px;
                     color:rgba(255, 255, 255, .5);
                     font-family: "BPG LE Studio 04 Caps", sans-serif;
                 }
