@@ -17,12 +17,28 @@
         grid-column-gap: 3.65vw;
         grid-template-columns:  auto auto auto auto;
       
+        .anima-bot::before{
+            content: "";
+            position: absolute;
+            bottom: 2.3vh;
+            right: 1.3vw;
+            background-image: url("../img/bage.png");
+            background-position: right bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 3.20vw;
+            height:4vh;
+        }
         .anima-bot{
+            position: relative;
             border: solid 1px rgba(31, 242, 253, 0.9);
             border-radius: 5px;
             // height: 32.4vh;
             height: 39.5vh;
-            background: rgba(0, 0, 0, .8);
+            background-image: url("../img/bot-bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             article{
                 position: relative;
                 height: 100%;

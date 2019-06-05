@@ -27,6 +27,9 @@ class BotsGallery extends Component {
         ],
         name: ''
     }
+    componentDidMount(){
+        document.title = "ბოტების გალერეა - Anima Chatbotics"
+    }
     render() {
         return (
             <section id="bot-gallery" className="anima-container">

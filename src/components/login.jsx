@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class login extends Component {
     state = {
-        notValid: false,
+        notValid: true,
     }
     componentDidMount(){
         document.title = "ავტორიზაცია - Anima Chatbotics"
@@ -30,8 +30,8 @@ class login extends Component {
                                 </span>
                             </div>
                         </div>
+                        {   this.state.notValid ? <p  className="invalid-feedback custom-error">თქვენს მიერ შეყვანილი მეილი ან პაროლი არასწორია</p> : ""}
                     </div>
-                    {   this.state.notValid ? <p  className="invalid-feedback custom-error">ფორმატი არ ემთხვევა</p> : ""}
                     <button className="auth-submit" type="button">შესვლა</button>
                     <Link to="/main" className="auth-forgot-password" >პაროლის აღდგენა</Link>
                     <Link to="/registration" className="auth-registration" >რეგისტრაცია</Link>
