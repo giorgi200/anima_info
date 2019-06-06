@@ -15,25 +15,8 @@ class Header extends Component {
                 </Link>
                 <nav className="anima-nav">
                     <ul className="anima-menu-list">
-                        {/* <li className="anima-menu-link">
-                            <Link to="/other" >ჩვენ შესახებ</Link>
-                        </li> */}
-                        <li className="anima-menu-link">
-                            <Link to="/bots" >ბოტების გალერეა</Link>
-                        </li>
-                        <li className="anima-menu-link">
-                            <Link to="/#partners" >პარტნიორები</Link>
-                        </li>
-                        <li className="anima-menu-link">
+                        <li className="anima-menu-link ">
                             <Link to="/other" >კონტაქტი</Link>
-                        </li>
-                        <li className="anima-menu-link anima-login-link">
-                            <Link to="/login" >შესვლა</Link>
-                        </li>
-                        <li className="anima-menu-link anima-globe">
-                            <Link to="/other" >
-                                <i className="material-icons">language</i>
-                            </Link>
                         </li>
                     </ul>
                 </nav>

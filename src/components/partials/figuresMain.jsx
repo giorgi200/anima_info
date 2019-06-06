@@ -25,14 +25,7 @@ class figures extends Component {
             data-rellax-speed="1"
             // data-rellax-percentage="0.5"
             alt="anima chatbots"
-            />
-            <img
-            src={require("../../assets/svg/figure3.svg")}
-            className="triangle-figure rellax"
-            data-rellax-speed="-2"
-            alt="anima chatbots"
-            />
-            
+            />            
         </div>
     );
   }

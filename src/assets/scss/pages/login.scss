@@ -42,11 +42,17 @@
                 animation-name: fadeInLeft;
                 animation-duration: 0.4s;
             }
-
+            
             .input-group{
                 border-bottom:solid 1px #fff;
                 margin-top: 4.63vh;
-                
+                position: relative;
+                .in-login{
+                    animation-name: none;
+                    position: absolute;
+                    max-width: 100%;
+                    transform: translateY(150%);
+                }
                 input{
                     background-color: transparent;
                     border: none;
