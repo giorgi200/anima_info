@@ -16,7 +16,7 @@ class Header extends Component {
                 <nav className="anima-nav">
                     <ul className="anima-menu-list">
                         <li className="anima-menu-link ">
-                            <Link to="/other" >კონტაქტი</Link>
+                            <Link to="/contact" >კონტაქტი</Link>
                         </li>
                     </ul>
                 </nav>
