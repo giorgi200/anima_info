@@ -15,10 +15,10 @@ function AppRouter() {
         <Router>
             <Header />
             <main>
-                <Route path="/" exact component={figuresMain} />                
-                <Route path="/" exact component={Main} />
-                <Route path="/contact" component={figuresAuth} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/" exact strict component={figuresMain} />                
+                <Route path="/" exact strict component={Main} />
+                <Route path="/contact" strict component={figuresAuth} />
+                <Route path="/contact" strict component={Contact} />
             </main>
         </Router>
     );
