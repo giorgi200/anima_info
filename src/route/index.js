@@ -5,8 +5,10 @@ import Main from '../components/main';
 import Contact from '../components/contact';
 
 import Header from '../components/partials/header';
+import BotsGallery from '../components/bots';
+
 import figuresAuth from '../components/partials/figuresAuth'
-// import figuresBots from '../components/partials/figuresBots'
+import figuresBots from '../components/partials/figuresBots'
 import figuresMain from '../components/partials/figuresMain'
 
 
@@ -15,10 +17,12 @@ function AppRouter() {
         <Router>
             <Header />
             <main>
-                <Route path="/" exact strict component={figuresMain} />                
-                <Route path="/" exact strict component={Main} />
-                <Route path="/contact" strict component={figuresAuth} />
-                <Route path="/contact" strict component={Contact} />
+                <Route path="/" exact  component={figuresMain} />                
+                <Route path="/" exact  component={Main} />
+                <Route path="/contact" exact  component={figuresAuth} />
+                <Route path="/contact" exact  component={Contact} />
+                <Route path="/bots" component={figuresBots} />                
+                <Route path="/bots" component={BotsGallery} />
             </main>
         </Router>
     );
