@@ -17,12 +17,12 @@ function AppRouter() {
         <Router>
             <Header />
             <main>
-                <Route path="/" exact  component={figuresMain} />                
-                <Route path="/" exact  component={Main} />
-                <Route path="/contact" exact  component={figuresAuth} />
-                <Route path="/contact" exact  component={Contact} />
-                <Route path="/bots" component={figuresBots} />                
-                <Route path="/bots" component={BotsGallery} />
+                <Route path="/" exact component={figuresMain} />                
+                <Route path="/" exact component={Main} />
+                <Route path="/contact" exact component={figuresAuth} />
+                <Route path="/contact" exact component={Contact} />
+                <Route path="/bots" exact component={figuresBots} />                
+                <Route path="/bots" exact component={BotsGallery} />
             </main>
         </Router>
     );
